@@ -8,6 +8,6 @@ public class Puyo : MonoBehaviour
 
     public void SetType(E_TYPE p_type)
     {
-
+        renderer.sprite = PuyoManager.instance.GetData(p_type).mainSprite;
     }
 }

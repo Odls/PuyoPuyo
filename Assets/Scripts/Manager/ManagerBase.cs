@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class ManagerBase<T> : MonoBehaviour where T : ManagerBase<T>
 {
-    static T instance;
+    private static T mInstance;
+    public static T instance { get => mInstance; private set => mInstance = value; }
 
-    private void Awake()
+    protected virtual void Awake()
     {
         if (instance != null)
         {

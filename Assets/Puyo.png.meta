@@ -174,9 +174,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4
-        y: 410
-        width: 63
-        height: 57
+        y: 407
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,7 +184,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ce4b5872975284489134b978a737852
+      spriteID: 3c06c06eb1b468942bafff096dbafb64
       vertices: []
       indices: 
       edges: []
@@ -193,10 +193,10 @@ TextureImporter:
       name: Puyo_1
       rect:
         serializedVersion: 2
-        x: 71
+        x: 69
         y: 407
-        width: 60
-        height: 58
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eca400e7ff47d341b026bd6221525b3
+      spriteID: 096de6f0b0ea300438adc5e7f09dce33
       vertices: []
       indices: 
       edges: []
@@ -213,10 +213,10 @@ TextureImporter:
       name: Puyo_2
       rect:
         serializedVersion: 2
-        x: 136
-        y: 412
-        width: 60
-        height: 59
+        x: 134
+        y: 407
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,7 +224,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c663b79686bbad7419b11828c7264ea9
+      spriteID: ebd7363f78a57474fb67183951e5b210
       vertices: []
       indices: 
       edges: []
@@ -233,9 +233,9 @@ TextureImporter:
       name: Puyo_3
       rect:
         serializedVersion: 2
-        x: 201
+        x: 199
         y: 407
-        width: 60
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -244,7 +244,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e27f8706070257144a067416148051fc
+      spriteID: d046daf9eecce4d4cbc49a40fadd10a6
       vertices: []
       indices: 
       edges: []
@@ -253,69 +253,9 @@ TextureImporter:
       name: Puyo_4
       rect:
         serializedVersion: 2
-        x: 266
-        y: 412
-        width: 62
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26971e4a1dc86cd40965854edf8657db
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_5
-      rect:
-        serializedVersion: 2
-        x: 331
+        x: 264
         y: 407
-        width: 62
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ee4dc5085a379b4fbfd1b113e6a7e73
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_6
-      rect:
-        serializedVersion: 2
-        x: 396
-        y: 412
-        width: 62
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69c1c3213249163418f90b2946216131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_7
-      rect:
-        serializedVersion: 2
-        x: 460
-        y: 407
-        width: 63
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -324,7 +264,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d12c30723d9e91b4889dfbd7187181aa
+      spriteID: 29bc5c26aafee0d459660614b1ee9574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302ff8bf38d8f70499da7836d1b4497c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_6
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c606bbb242acf49bc0059776d8a62f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_7
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 407
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d5cb18583c7d54798a55dc19bce2c7
       vertices: []
       indices: 
       edges: []
@@ -334,9 +334,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 524
-        y: 410
-        width: 63
-        height: 60
+        y: 407
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,7 +344,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b97d01a72d0d62740957aeacd9a70428
+      spriteID: fe3b16b3feb51894da9599b2f772b51f
       vertices: []
       indices: 
       edges: []
@@ -355,8 +355,8 @@ TextureImporter:
         serializedVersion: 2
         x: 589
         y: 407
-        width: 62
-        height: 63
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -364,7 +364,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b8c1b38a8cacde4e9c4676ce28a3519
+      spriteID: 775a617b18fcaff4ba4d06d7f93815c6
       vertices: []
       indices: 
       edges: []
@@ -374,9 +374,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 654
-        y: 410
-        width: 62
-        height: 61
+        y: 407
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,7 +384,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27dcb450b6140434fb447ff5014b49c2
+      spriteID: f37100ed4a3669a41be3eaca0282f382
       vertices: []
       indices: 
       edges: []
@@ -395,7 +395,7 @@ TextureImporter:
         serializedVersion: 2
         x: 719
         y: 407
-        width: 62
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -404,7 +404,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 463c9017c0b92a040a81005940e767a0
+      spriteID: 7e2e1dbc35037ae438fe4a1ef3b1b457
       vertices: []
       indices: 
       edges: []
@@ -414,9 +414,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 784
-        y: 410
+        y: 407
         width: 64
-        height: 60
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,7 +424,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2097a32e1053614cacb89c102b5723c
+      spriteID: 6fad0bf2ebed1374f82b191eef6bceb5
       vertices: []
       indices: 
       edges: []
@@ -436,7 +436,7 @@ TextureImporter:
         x: 849
         y: 407
         width: 64
-        height: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,7 +444,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59444aa63f06e0140a4fbd45879c8773
+      spriteID: 3cba11be9a9987646af53284caa4f2f7
       vertices: []
       indices: 
       edges: []
@@ -453,10 +453,10 @@ TextureImporter:
       name: Puyo_14
       rect:
         serializedVersion: 2
-        x: 917
-        y: 411
-        width: 60
-        height: 58
+        x: 914
+        y: 407
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -464,7 +464,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 233e2577dbe372042a0e9787efa47fe3
+      spriteID: ca966197484285448be615032ea90c37
       vertices: []
       indices: 
       edges: []
@@ -474,68 +474,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4
-        y: 346
+        y: 342
         width: 64
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 954175e58173e57428e0106fa41ad9f7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_16
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 342
-        width: 62
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61c48b14c24e2f2489f79586068235a8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_17
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 347
-        width: 62
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b5797249d20239418cdf3502fd940e8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_18
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 342
-        width: 62
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -544,7 +484,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb1835ce4d9775f42b076c3d64690603
+      spriteID: f18e08fdca5ffa149a67beb1352dbc1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_16
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ab798cb4dc100458ff5200f0c7925d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_17
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95c2cf2321f34b4b92e9b8dc31bb745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_18
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 195a1c51fe490f1409262e22658f8bf4
       vertices: []
       indices: 
       edges: []
@@ -553,10 +553,10 @@ TextureImporter:
       name: Puyo_19
       rect:
         serializedVersion: 2
-        x: 265
-        y: 347
-        width: 63
-        height: 54
+        x: 264
+        y: 342
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -564,7 +564,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdcf92ef835788f4e90bce43fd20484f
+      spriteID: eb8691b04230e7b478398ac34f8f09e6
       vertices: []
       indices: 
       edges: []
@@ -573,10 +573,10 @@ TextureImporter:
       name: Puyo_20
       rect:
         serializedVersion: 2
-        x: 330
+        x: 329
         y: 342
-        width: 63
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,7 +584,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56a93a8a4a2e5a24d831293fad7c567b
+      spriteID: 4ba5cc970fa36e44da799d71d1ed8b8e
       vertices: []
       indices: 
       edges: []
@@ -593,10 +593,10 @@ TextureImporter:
       name: Puyo_21
       rect:
         serializedVersion: 2
-        x: 395
-        y: 347
-        width: 63
-        height: 59
+        x: 394
+        y: 342
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -604,7 +604,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d08f993314f2226448211eb7c201a390
+      spriteID: bf8ab116cc6185347abfd0ac2d90a0bd
       vertices: []
       indices: 
       edges: []
@@ -614,9 +614,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 459
-        y: 347
+        y: 342
         width: 64
-        height: 59
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -624,7 +624,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd3273c9d30ccf34699afc977bc30b54
+      spriteID: 0037b96246085334ebea3f0c6a5d9c45
       vertices: []
       indices: 
       edges: []
@@ -644,7 +644,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 398eb5c927757624391adbd0694d287b
+      spriteID: 86b78ac5f774801499425e79cb288233
       vertices: []
       indices: 
       edges: []
@@ -654,108 +654,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 719
-        y: 346
-        width: 63
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92d2736a2b8a52b4ca22af1f100ab8c1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_25
-      rect:
-        serializedVersion: 2
-        x: 915
-        y: 346
-        width: 60
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31fa6fb8bda1f694182964e25bf06578
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_26
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 278
-        width: 61
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c1b354a178b4f0499963425b0894887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_27
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 277
-        width: 58
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86b59f01db962f0408a87ffd8690662d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_28
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 279
-        width: 58
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 601f7e85a4117364ca50922cae8bcaf6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_29
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 277
-        width: 58
+        y: 342
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -764,7 +664,107 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca76b37e7b26ba54fbcc1e96f4b37f09
+      spriteID: f68f7d4cc645168468a6c7ba0f4e7226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_25
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 342
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a31e36964407c4486b542e65a7bee7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_26
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 277
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf7ca78a4c977f45b444be5a3f86a0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_27
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 277
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7673f66c3f43d46961308dcabf2b8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_28
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 277
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ff7c958ebc8a34397f108ef3492d18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_29
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 277
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f6a9871b4c0b44493bd03d19cae7ef
       vertices: []
       indices: 
       edges: []
@@ -773,10 +773,10 @@ TextureImporter:
       name: Puyo_30
       rect:
         serializedVersion: 2
-        x: 267
-        y: 280
-        width: 61
-        height: 58
+        x: 264
+        y: 277
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -784,7 +784,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 553b92a3bb9ccb34f81dd66b2b9d5938
+      spriteID: a7c1512d753563143a31058e6a93a298
       vertices: []
       indices: 
       edges: []
@@ -793,10 +793,10 @@ TextureImporter:
       name: Puyo_31
       rect:
         serializedVersion: 2
-        x: 332
+        x: 329
         y: 277
-        width: 61
-        height: 62
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,7 +804,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 548335bd27081d6439fd4e535c910fa3
+      spriteID: 1ed357172f3e62d44ad8ca5f89f7276d
       vertices: []
       indices: 
       edges: []
@@ -813,10 +813,10 @@ TextureImporter:
       name: Puyo_32
       rect:
         serializedVersion: 2
-        x: 397
-        y: 280
-        width: 61
-        height: 61
+        x: 394
+        y: 277
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -824,7 +824,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65107a0c566222744b0051a1aec4493e
+      spriteID: 1b7577676e9746c428822cb61cf0c280
       vertices: []
       indices: 
       edges: []
@@ -834,9 +834,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 459
-        y: 281
+        y: 277
         width: 64
-        height: 60
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -844,7 +844,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ae7534200c88248b1ce0e62a11fca1
+      spriteID: c0a4ba9fde16e214fa5704b04f281e84
       vertices: []
       indices: 
       edges: []
@@ -864,7 +864,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2f30ab752c55dc498f5c1b9116392fd
+      spriteID: 62fc9dde9011ba14c94ad795cd24f0f3
       vertices: []
       indices: 
       edges: []
@@ -874,9 +874,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 719
-        y: 281
+        y: 277
         width: 64
-        height: 57
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -884,7 +884,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd0098cafccc5064ab18c62e4f56ce32
+      spriteID: 18bd69292a71fb14e9186ee947938e05
       vertices: []
       indices: 
       edges: []
@@ -893,10 +893,10 @@ TextureImporter:
       name: Puyo_36
       rect:
         serializedVersion: 2
-        x: 918
-        y: 280
-        width: 53
-        height: 59
+        x: 914
+        y: 277
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -904,7 +904,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 084be2101d60fc6429e040e3beb154a5
+      spriteID: c3555f36901b7fd4d94670dacafe0c76
       vertices: []
       indices: 
       edges: []
@@ -914,68 +914,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4
-        y: 213
+        y: 212
         width: 64
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc73ec4569e9f774f9b3053f6fa82b62
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_38
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 212
-        width: 61
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43ee6a83f00eea84da8d09d2f06c2cd7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_39
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 214
-        width: 61
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e5db20bef917484295185c633c784e7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_40
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 212
-        width: 61
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -984,7 +924,67 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e946c9507f80054b8dcd6ea0d5787e2
+      spriteID: 9ffc183fe0ab69644807563f99533533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_38
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 212
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1948d5a1287605498cd24b0e301f49c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_39
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 212
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a9ce7bb2e9f79419483fc9d0144fb5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_40
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 212
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34513c67139fb1843bcf6805d876c60a
       vertices: []
       indices: 
       edges: []
@@ -993,10 +993,10 @@ TextureImporter:
       name: Puyo_41
       rect:
         serializedVersion: 2
-        x: 265
-        y: 215
-        width: 63
-        height: 60
+        x: 264
+        y: 212
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1004,7 +1004,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f1bc1c8156d6dd4f8e2d6aab01afccc
+      spriteID: 8fcbc1cb4b8e2364292faa1fecd9632d
       vertices: []
       indices: 
       edges: []
@@ -1013,10 +1013,10 @@ TextureImporter:
       name: Puyo_42
       rect:
         serializedVersion: 2
-        x: 330
+        x: 329
         y: 212
-        width: 63
-        height: 63
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1024,7 +1024,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 159b1efa3aa0ac74487978ca3ca7ec2f
+      spriteID: b6a3e869b814a774f9f8fa380537585f
       vertices: []
       indices: 
       edges: []
@@ -1033,10 +1033,10 @@ TextureImporter:
       name: Puyo_43
       rect:
         serializedVersion: 2
-        x: 395
-        y: 215
-        width: 63
-        height: 61
+        x: 394
+        y: 212
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1044,7 +1044,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84430eb7513fd844da97257b2b30e5fb
+      spriteID: e7a211238c1179941ba6b0cb1a8544c5
       vertices: []
       indices: 
       edges: []
@@ -1054,9 +1054,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 459
-        y: 215
+        y: 212
         width: 64
-        height: 61
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1064,7 +1064,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 373ded3a82ad9884e99fca921f03de62
+      spriteID: 63d536b4b39ea8749842cb294251f930
       vertices: []
       indices: 
       edges: []
@@ -1084,7 +1084,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3658a2643f82944294cfbf1821b7c7e
+      spriteID: c06a0f95c54ad504aabceb076029c328
       vertices: []
       indices: 
       edges: []
@@ -1093,49 +1093,9 @@ TextureImporter:
       name: Puyo_46
       rect:
         serializedVersion: 2
-        x: 720
+        x: 719
         y: 212
-        width: 61
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a897b0152321b340a4f6f61ad88082a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_47
-      rect:
-        serializedVersion: 2
-        x: 923
-        y: 216
-        width: 43
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a12c1007759493644be94bf5d8e3e5e0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_48
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 147
-        width: 62
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1144,7 +1104,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6d2d9b0df639a941ae0c09f6a052585
+      spriteID: 92044fb356e3d4e4aabc9b2b54185848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_47
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 212
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240928c937b82c449ac2493375a2dffa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_48
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 147
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec33830b19bb10145a90f99011cab770
       vertices: []
       indices: 
       edges: []
@@ -1154,9 +1154,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 69
-        y: 152
-        width: 62
-        height: 52
+        y: 147
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1164,7 +1164,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 361fe11a3ceab994bad485200fa377af
+      spriteID: 9313bbea9febfb74fb46e0317dbfc75a
       vertices: []
       indices: 
       edges: []
@@ -1175,8 +1175,8 @@ TextureImporter:
         serializedVersion: 2
         x: 134
         y: 147
-        width: 62
-        height: 57
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1184,7 +1184,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec187c5bbc8e9e347bd2175a930b9472
+      spriteID: fd72034faa5aa9c4394a1fa70ef38290
       vertices: []
       indices: 
       edges: []
@@ -1194,9 +1194,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 152
-        width: 62
-        height: 59
+        y: 147
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1204,7 +1204,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bb0c70a1ff648c49b7d6ca54c50e287
+      spriteID: 02b4789d88c44eb44988b22e9f475f2f
       vertices: []
       indices: 
       edges: []
@@ -1215,7 +1215,7 @@ TextureImporter:
         serializedVersion: 2
         x: 264
         y: 147
-        width: 62
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1224,7 +1224,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c58609a291a9e42479cf6daef9cfe4d2
+      spriteID: 12f4f87988d0d3a48871d59e8f9a7764
       vertices: []
       indices: 
       edges: []
@@ -1234,9 +1234,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 329
-        y: 152
+        y: 147
         width: 64
-        height: 52
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1244,7 +1244,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da5b6de5c8202024ab4d86425700ea09
+      spriteID: 191e05fc69f341944afe688f80a988f5
       vertices: []
       indices: 
       edges: []
@@ -1256,7 +1256,7 @@ TextureImporter:
         x: 394
         y: 147
         width: 64
-        height: 57
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1264,7 +1264,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba46ee02fe1292443b35705df0e95fb6
+      spriteID: c28c25adc09c40b489d5643d33f4ae1f
       vertices: []
       indices: 
       edges: []
@@ -1274,9 +1274,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 459
-        y: 150
+        y: 147
         width: 64
-        height: 61
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1284,7 +1284,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afceab96cddbce242a9e7b69ea7622f1
+      spriteID: 153407fb3940e81428a658fb6bd32bda
       vertices: []
       indices: 
       edges: []
@@ -1304,7 +1304,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a484ac1a0a6603842b328572c8a525f6
+      spriteID: 1580907a28029834b8f632f7d8218eb0
       vertices: []
       indices: 
       edges: []
@@ -1314,48 +1314,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 719
-        y: 148
+        y: 147
         width: 64
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ccf9ff574022044897d109f77b74873
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_58
-      rect:
-        serializedVersion: 2
-        x: 930
-        y: 151
-        width: 28
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: daaab1307d72b9847a246a8405dbab6d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_59
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 82
-        width: 63
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1364,7 +1324,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f630659dfa295024d8d39135577df1f8
+      spriteID: 459310ac876c7e94ca6936f1d9bf0d04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_58
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 147
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8934b74ddb796448aa551cf76e371c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puyo_59
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 82
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72f007d65122b14f90e035ad17941ec
       vertices: []
       indices: 
       edges: []
@@ -1374,9 +1374,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 69
-        y: 87
-        width: 63
-        height: 54
+        y: 82
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1384,7 +1384,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b2ae426f42adbf42800e11afc4d0a23
+      spriteID: 47ac81a94ea577c4389db93a08ba3888
       vertices: []
       indices: 
       edges: []
@@ -1395,8 +1395,8 @@ TextureImporter:
         serializedVersion: 2
         x: 134
         y: 82
-        width: 63
-        height: 59
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1404,7 +1404,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bf60d531cb12644e91167cfd9e74bdd
+      spriteID: 0244763731dfe3b49888cd18226ecc1f
       vertices: []
       indices: 
       edges: []
@@ -1414,9 +1414,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 199
-        y: 87
-        width: 63
-        height: 59
+        y: 82
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1424,7 +1424,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14e82606994be6a4091769878ff4a3a1
+      spriteID: a68e6aef6aeec8c4b83751f090dab993
       vertices: []
       indices: 
       edges: []
@@ -1435,7 +1435,7 @@ TextureImporter:
         serializedVersion: 2
         x: 264
         y: 82
-        width: 63
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1444,7 +1444,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5a9435057d8e284e8b43190c6be07b4
+      spriteID: e86ce97d6280fc3428dd8eef3697eea1
       vertices: []
       indices: 
       edges: []
@@ -1454,9 +1454,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 329
-        y: 87
+        y: 82
         width: 64
-        height: 54
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1464,7 +1464,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91a58bb495720e5449714e6d1ab41d81
+      spriteID: a07f6c54fe0c2fb4c9193a8f767c92c9
       vertices: []
       indices: 
       edges: []
@@ -1476,7 +1476,7 @@ TextureImporter:
         x: 394
         y: 82
         width: 64
-        height: 59
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1484,127 +1484,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e6128b73f0253f49abda2e4e94dc894
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_66
-      rect:
-        serializedVersion: 2
-        x: 459
-        y: 27
-        width: 63
-        height: 109
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61f013e074a307540b322580f34d2a95
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_67
-      rect:
-        serializedVersion: 2
-        x: 523
-        y: 27
-        width: 65
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d90aa6c6be341d4419928769a3d34d1f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_68
-      rect:
-        serializedVersion: 2
-        x: 590
-        y: 24
-        width: 61
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22e8b8b0989521440a0af0aaa86c0aa9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_69
-      rect:
-        serializedVersion: 2
-        x: 653
-        y: 24
-        width: 65
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7551587964b401f47ba918a29419805c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_70
-      rect:
-        serializedVersion: 2
-        x: 727
-        y: 124
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 795a4ccfa22e704479a205bee9c9f1a5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_71
-      rect:
-        serializedVersion: 2
-        x: 759
-        y: 124
-        width: 14
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7f1072efef41254091779252cd0a9de
+      spriteID: fdfc0467c9d94e94fa878c2af26047da
       vertices: []
       indices: 
       edges: []
@@ -1613,10 +1493,10 @@ TextureImporter:
       name: Puyo_72
       rect:
         serializedVersion: 2
-        x: 791
-        y: 124
-        width: 14
-        height: 14
+        x: 849
+        y: 82
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1624,7 +1504,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd7a2afae13dd6048867e5222c31e3a1
+      spriteID: 585da78e12f67aa48aaa8ec4c3a91674
       vertices: []
       indices: 
       edges: []
@@ -1633,10 +1513,10 @@ TextureImporter:
       name: Puyo_73
       rect:
         serializedVersion: 2
-        x: 823
-        y: 124
-        width: 14
-        height: 14
+        x: 4
+        y: 17
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1644,7 +1524,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c289650229a0b2c4ba55048e211d5bf8
+      spriteID: 34df08dae87bf1d41a42bfaaec752dee
       vertices: []
       indices: 
       edges: []
@@ -1653,10 +1533,10 @@ TextureImporter:
       name: Puyo_74
       rect:
         serializedVersion: 2
-        x: 849
-        y: 85
-        width: 63
-        height: 58
+        x: 69
+        y: 17
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1664,7 +1544,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d20a03de83577041a8155024be36ad2
+      spriteID: b403e3e82d2f25a4ca5717b548bd8d14
       vertices: []
       indices: 
       edges: []
@@ -1673,10 +1553,10 @@ TextureImporter:
       name: Puyo_75
       rect:
         serializedVersion: 2
-        x: 725
-        y: 87
-        width: 18
-        height: 18
+        x: 134
+        y: 17
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1684,7 +1564,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4252deadee0c85b4094b375442e2a3e7
+      spriteID: aa2e680de851ec1498e2ba53c809cf1c
       vertices: []
       indices: 
       edges: []
@@ -1693,10 +1573,10 @@ TextureImporter:
       name: Puyo_76
       rect:
         serializedVersion: 2
-        x: 757
-        y: 87
-        width: 18
-        height: 18
+        x: 199
+        y: 17
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1704,7 +1584,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba780a176c2bd214a94bee68bc40d24b
+      spriteID: dd04d38f0a4a5a54b92eeb6ed114bad8
       vertices: []
       indices: 
       edges: []
@@ -1713,10 +1593,10 @@ TextureImporter:
       name: Puyo_77
       rect:
         serializedVersion: 2
-        x: 789
-        y: 87
-        width: 18
-        height: 18
+        x: 264
+        y: 17
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1724,7 +1604,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 554cbffeedb14d74bb0832d2a847f30a
+      spriteID: a0c9f6d5cd4ad9e458f73b601822cf0c
       vertices: []
       indices: 
       edges: []
@@ -1733,10 +1613,10 @@ TextureImporter:
       name: Puyo_78
       rect:
         serializedVersion: 2
-        x: 821
-        y: 87
-        width: 18
-        height: 18
+        x: 329
+        y: 17
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1744,7 +1624,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecb73fb501136ef4e92718b27a667f9e
+      spriteID: 6088edc98327a8b49bc42f0ec569f58a
       vertices: []
       indices: 
       edges: []
@@ -1753,130 +1633,10 @@ TextureImporter:
       name: Puyo_79
       rect:
         serializedVersion: 2
-        x: 7
-        y: 17
-        width: 61
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26426f5f87f5bf7409799384a53ecd78
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_80
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 20
-        width: 61
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 803681dd9eec5b244820804939eb9aab
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_81
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 17
-        width: 61
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 105f450818716df449a5e7c950e3a404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_82
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 20
-        width: 61
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4327207917185b40994fcd73869aa28
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_83
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 17
-        width: 61
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b21dcd89d02bf0a4bb81d20a5edbeccf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_84
-      rect:
-        serializedVersion: 2
-        x: 329
-        y: 20
-        width: 64
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99eb9aa255a38cb48a58ded6808b07fa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Puyo_85
-      rect:
-        serializedVersion: 2
         x: 394
         y: 17
         width: 64
-        height: 62
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1884,7 +1644,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85c874d7463e0ca4aa4853882cdf3220
+      spriteID: a2e00349db3482048a3b563b3a146538
       vertices: []
       indices: 
       edges: []
