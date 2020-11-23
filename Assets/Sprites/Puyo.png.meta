@@ -2,86 +2,86 @@ fileFormatVersion: 2
 guid: 2fe33a396fcb21744a33355e4b410288
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Puyo_0
-    21300002: Puyo_1
-    21300004: Puyo_2
-    21300006: Puyo_3
-    21300008: Puyo_4
-    21300010: Puyo_5
-    21300012: Puyo_6
-    21300014: Puyo_7
-    21300016: Puyo_8
-    21300018: Puyo_9
-    21300020: Puyo_10
-    21300022: Puyo_11
-    21300024: Puyo_12
-    21300026: Puyo_13
+    21300000: RedPuyo_0
+    21300002: RedPuyo_8
+    21300004: RedPuyo_2
+    21300006: RedPuyo_10
+    21300008: RedPuyo_1
+    21300010: RedPuyo_9
+    21300012: RedPuyo_3
+    21300014: YellowPuyo_11
+    21300016: YellowPuyo_4
+    21300018: YellowPuyo_12
+    21300020: YellowPuyo_6
+    21300022: YellowPuyo_14
+    21300024: YellowPuyo_5
+    21300026: YellowPuyo_13
     21300028: Puyo_14
-    21300030: Puyo_15
-    21300032: Puyo_16
-    21300034: Puyo_17
-    21300036: Puyo_18
-    21300038: Puyo_19
-    21300040: Puyo_20
-    21300042: Puyo_21
-    21300044: Puyo_22
-    21300046: Puyo_23
-    21300048: Puyo_24
+    21300030: GreenPuyo_0
+    21300032: GreenPuyo_8
+    21300034: GreenPuyo_2
+    21300036: GreenPuyo_10
+    21300038: GreenPuyo_1
+    21300040: GreenPuyo_9
+    21300042: GreenPuyo_3
+    21300044: RedPuyo_7
+    21300046: RedPuyo_15
+    21300048: RedPuyo_Die
     21300050: Puyo_25
-    21300052: Puyo_26
-    21300054: Puyo_27
-    21300056: Puyo_28
-    21300058: Puyo_29
-    21300060: Puyo_30
-    21300062: Puyo_31
-    21300064: Puyo_32
-    21300066: Puyo_33
-    21300068: Puyo_34
-    21300070: Puyo_35
+    21300052: BluePuyo_0
+    21300054: BluePuyo_8
+    21300056: BluePuyo_2
+    21300058: BluePuyo_10
+    21300060: BluePuyo_1
+    21300062: BluePuyo_9
+    21300064: BluePuyo_3
+    21300066: GreenPuyo_7
+    21300068: GreenPuyo_15
+    21300070: GreenPuyo_Die
     21300072: Puyo_36
-    21300074: Puyo_37
-    21300076: Puyo_38
-    21300078: Puyo_39
-    21300080: Puyo_40
-    21300082: Puyo_41
-    21300084: Puyo_42
-    21300086: Puyo_43
-    21300088: Puyo_44
-    21300090: Puyo_45
-    21300092: Puyo_46
+    21300074: YellowPuyo_0
+    21300076: YellowPuyo_8
+    21300078: YellowPuyo_2
+    21300080: YellowPuyo_10
+    21300082: YellowPuyo_1
+    21300084: YellowPuyo_9
+    21300086: YellowPuyo_3
+    21300088: BluePuyo_7
+    21300090: BluePuyo_15
+    21300092: BluePuyo_Die
     21300094: Puyo_47
-    21300096: Puyo_48
-    21300098: Puyo_49
-    21300100: Puyo_50
-    21300102: Puyo_51
-    21300104: Puyo_52
-    21300106: Puyo_53
-    21300108: Puyo_54
-    21300110: Puyo_55
-    21300112: Puyo_56
-    21300114: Puyo_57
+    21300096: RedPuyo_11
+    21300098: RedPuyo_4
+    21300100: RedPuyo_12
+    21300102: RedPuyo_6
+    21300104: RedPuyo_14
+    21300106: RedPuyo_5
+    21300108: RedPuyo_13
+    21300110: YellowPuyo_7
+    21300112: YellowPuyo_15
+    21300114: YellowPuyo_Die
     21300116: Puyo_58
-    21300118: Puyo_59
-    21300120: Puyo_60
-    21300122: Puyo_61
-    21300124: Puyo_62
-    21300126: Puyo_63
-    21300128: Puyo_64
-    21300130: Puyo_65
+    21300118: GreenPuyo_11
+    21300120: GreenPuyo_4
+    21300122: GreenPuyo_12
+    21300124: GreenPuyo_6
+    21300126: GreenPuyo_14
+    21300128: GreenPuyo_5
+    21300130: GreenPuyo_13
     21300132: Puyo_66
     21300134: Puyo_67
     21300136: Puyo_68
     21300138: Puyo_69
     21300140: Puyo_70
     21300142: Puyo_71
-    21300144: Puyo_72
-    21300146: Puyo_73
-    21300148: Puyo_74
-    21300150: Puyo_75
-    21300152: Puyo_76
-    21300154: Puyo_77
-    21300156: Puyo_78
-    21300158: Puyo_79
+    21300144: GrayPuyo
+    21300146: BluePuyo_11
+    21300148: BluePuyo_4
+    21300150: BluePuyo_12
+    21300152: BluePuyo_6
+    21300154: BluePuyo_14
+    21300156: BluePuyo_5
+    21300158: BluePuyo_13
     21300160: Puyo_80
     21300162: Puyo_81
     21300164: Puyo_82
@@ -117,7 +117,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -170,7 +170,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Puyo_0
+      name: RedPuyo_0
       rect:
         serializedVersion: 2
         x: 4
@@ -178,7 +178,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,7 +190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_1
+      name: RedPuyo_8
       rect:
         serializedVersion: 2
         x: 69
@@ -198,7 +198,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_2
+      name: RedPuyo_2
       rect:
         serializedVersion: 2
         x: 134
@@ -218,7 +218,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,7 +230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_3
+      name: RedPuyo_10
       rect:
         serializedVersion: 2
         x: 199
@@ -238,7 +238,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,7 +250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_4
+      name: RedPuyo_1
       rect:
         serializedVersion: 2
         x: 264
@@ -258,7 +258,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_5
+      name: RedPuyo_9
       rect:
         serializedVersion: 2
         x: 329
@@ -278,7 +278,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -290,7 +290,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_6
+      name: RedPuyo_3
       rect:
         serializedVersion: 2
         x: 394
@@ -298,7 +298,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -310,7 +310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_7
+      name: YellowPuyo_11
       rect:
         serializedVersion: 2
         x: 459
@@ -318,7 +318,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -330,7 +330,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_8
+      name: YellowPuyo_4
       rect:
         serializedVersion: 2
         x: 524
@@ -338,7 +338,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -350,7 +350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_9
+      name: YellowPuyo_12
       rect:
         serializedVersion: 2
         x: 589
@@ -358,7 +358,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,7 +370,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_10
+      name: YellowPuyo_6
       rect:
         serializedVersion: 2
         x: 654
@@ -378,7 +378,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -390,7 +390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_11
+      name: YellowPuyo_14
       rect:
         serializedVersion: 2
         x: 719
@@ -398,7 +398,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,7 +410,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_12
+      name: YellowPuyo_5
       rect:
         serializedVersion: 2
         x: 784
@@ -418,7 +418,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,7 +430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_13
+      name: YellowPuyo_13
       rect:
         serializedVersion: 2
         x: 849
@@ -438,7 +438,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -458,7 +458,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -470,7 +470,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_15
+      name: GreenPuyo_0
       rect:
         serializedVersion: 2
         x: 4
@@ -478,7 +478,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -490,7 +490,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_16
+      name: GreenPuyo_8
       rect:
         serializedVersion: 2
         x: 69
@@ -498,7 +498,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -510,7 +510,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_17
+      name: GreenPuyo_2
       rect:
         serializedVersion: 2
         x: 134
@@ -518,7 +518,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -530,7 +530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_18
+      name: GreenPuyo_10
       rect:
         serializedVersion: 2
         x: 199
@@ -538,7 +538,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -550,7 +550,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_19
+      name: GreenPuyo_1
       rect:
         serializedVersion: 2
         x: 264
@@ -558,7 +558,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -570,7 +570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_20
+      name: GreenPuyo_9
       rect:
         serializedVersion: 2
         x: 329
@@ -578,7 +578,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -590,7 +590,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_21
+      name: GreenPuyo_3
       rect:
         serializedVersion: 2
         x: 394
@@ -598,7 +598,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -610,7 +610,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_22
+      name: RedPuyo_7
       rect:
         serializedVersion: 2
         x: 459
@@ -618,7 +618,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -630,7 +630,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_23
+      name: RedPuyo_15
       rect:
         serializedVersion: 2
         x: 524
@@ -638,7 +638,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -650,7 +650,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_24
+      name: RedPuyo_Die
       rect:
         serializedVersion: 2
         x: 719
@@ -658,7 +658,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -678,7 +678,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -690,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_26
+      name: BluePuyo_0
       rect:
         serializedVersion: 2
         x: 4
@@ -698,7 +698,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -710,7 +710,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_27
+      name: BluePuyo_8
       rect:
         serializedVersion: 2
         x: 69
@@ -718,7 +718,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -730,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_28
+      name: BluePuyo_2
       rect:
         serializedVersion: 2
         x: 134
@@ -738,7 +738,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -750,7 +750,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_29
+      name: BluePuyo_10
       rect:
         serializedVersion: 2
         x: 199
@@ -758,7 +758,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -770,7 +770,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_30
+      name: BluePuyo_1
       rect:
         serializedVersion: 2
         x: 264
@@ -778,7 +778,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -790,7 +790,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_31
+      name: BluePuyo_9
       rect:
         serializedVersion: 2
         x: 329
@@ -798,7 +798,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -810,7 +810,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_32
+      name: BluePuyo_3
       rect:
         serializedVersion: 2
         x: 394
@@ -818,7 +818,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -830,7 +830,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_33
+      name: GreenPuyo_7
       rect:
         serializedVersion: 2
         x: 459
@@ -838,7 +838,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -850,7 +850,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_34
+      name: GreenPuyo_15
       rect:
         serializedVersion: 2
         x: 524
@@ -858,7 +858,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -870,7 +870,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_35
+      name: GreenPuyo_Die
       rect:
         serializedVersion: 2
         x: 719
@@ -878,7 +878,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -898,7 +898,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -910,7 +910,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_37
+      name: YellowPuyo_0
       rect:
         serializedVersion: 2
         x: 4
@@ -918,7 +918,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -930,7 +930,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_38
+      name: YellowPuyo_8
       rect:
         serializedVersion: 2
         x: 69
@@ -938,7 +938,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -950,7 +950,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_39
+      name: YellowPuyo_2
       rect:
         serializedVersion: 2
         x: 134
@@ -958,7 +958,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -970,7 +970,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_40
+      name: YellowPuyo_10
       rect:
         serializedVersion: 2
         x: 199
@@ -978,7 +978,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -990,7 +990,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_41
+      name: YellowPuyo_1
       rect:
         serializedVersion: 2
         x: 264
@@ -998,7 +998,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1010,7 +1010,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_42
+      name: YellowPuyo_9
       rect:
         serializedVersion: 2
         x: 329
@@ -1018,7 +1018,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1030,7 +1030,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_43
+      name: YellowPuyo_3
       rect:
         serializedVersion: 2
         x: 394
@@ -1038,7 +1038,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1050,7 +1050,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_44
+      name: BluePuyo_7
       rect:
         serializedVersion: 2
         x: 459
@@ -1058,7 +1058,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1070,7 +1070,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_45
+      name: BluePuyo_15
       rect:
         serializedVersion: 2
         x: 524
@@ -1078,7 +1078,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1090,7 +1090,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_46
+      name: BluePuyo_Die
       rect:
         serializedVersion: 2
         x: 719
@@ -1098,7 +1098,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1118,7 +1118,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1130,7 +1130,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_48
+      name: RedPuyo_11
       rect:
         serializedVersion: 2
         x: 4
@@ -1138,7 +1138,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1150,7 +1150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_49
+      name: RedPuyo_4
       rect:
         serializedVersion: 2
         x: 69
@@ -1158,7 +1158,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1170,15 +1170,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_50
+      name: RedPuyo_12
       rect:
         serializedVersion: 2
-        x: 134
+        x: 133
         y: 147
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1190,7 +1190,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_51
+      name: RedPuyo_6
       rect:
         serializedVersion: 2
         x: 199
@@ -1198,7 +1198,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1210,7 +1210,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_52
+      name: RedPuyo_14
       rect:
         serializedVersion: 2
         x: 264
@@ -1218,7 +1218,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1230,7 +1230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_53
+      name: RedPuyo_5
       rect:
         serializedVersion: 2
         x: 329
@@ -1238,7 +1238,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1250,7 +1250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_54
+      name: RedPuyo_13
       rect:
         serializedVersion: 2
         x: 394
@@ -1258,7 +1258,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1270,7 +1270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_55
+      name: YellowPuyo_7
       rect:
         serializedVersion: 2
         x: 459
@@ -1278,7 +1278,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1290,7 +1290,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_56
+      name: YellowPuyo_15
       rect:
         serializedVersion: 2
         x: 524
@@ -1298,7 +1298,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1310,7 +1310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_57
+      name: YellowPuyo_Die
       rect:
         serializedVersion: 2
         x: 719
@@ -1318,7 +1318,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1338,7 +1338,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1350,7 +1350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_59
+      name: GreenPuyo_11
       rect:
         serializedVersion: 2
         x: 4
@@ -1358,7 +1358,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1370,7 +1370,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_60
+      name: GreenPuyo_4
       rect:
         serializedVersion: 2
         x: 69
@@ -1378,7 +1378,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1390,7 +1390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_61
+      name: GreenPuyo_12
       rect:
         serializedVersion: 2
         x: 134
@@ -1398,7 +1398,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1410,7 +1410,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_62
+      name: GreenPuyo_6
       rect:
         serializedVersion: 2
         x: 199
@@ -1418,7 +1418,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1430,7 +1430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_63
+      name: GreenPuyo_14
       rect:
         serializedVersion: 2
         x: 264
@@ -1438,7 +1438,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1450,7 +1450,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_64
+      name: GreenPuyo_5
       rect:
         serializedVersion: 2
         x: 329
@@ -1458,7 +1458,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1470,7 +1470,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_65
+      name: GreenPuyo_13
       rect:
         serializedVersion: 2
         x: 394
@@ -1478,7 +1478,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1490,7 +1490,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_72
+      name: GrayPuyo
       rect:
         serializedVersion: 2
         x: 849
@@ -1498,7 +1498,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1510,7 +1510,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_73
+      name: BluePuyo_11
       rect:
         serializedVersion: 2
         x: 4
@@ -1518,7 +1518,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1530,7 +1530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_74
+      name: BluePuyo_4
       rect:
         serializedVersion: 2
         x: 69
@@ -1538,7 +1538,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1550,7 +1550,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_75
+      name: BluePuyo_12
       rect:
         serializedVersion: 2
         x: 134
@@ -1558,7 +1558,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1570,7 +1570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_76
+      name: BluePuyo_6
       rect:
         serializedVersion: 2
         x: 199
@@ -1578,7 +1578,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1590,7 +1590,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_77
+      name: BluePuyo_14
       rect:
         serializedVersion: 2
         x: 264
@@ -1598,7 +1598,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1610,7 +1610,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_78
+      name: BluePuyo_5
       rect:
         serializedVersion: 2
         x: 329
@@ -1618,7 +1618,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1630,7 +1630,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Puyo_79
+      name: BluePuyo_13
       rect:
         serializedVersion: 2
         x: 394
@@ -1638,7 +1638,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

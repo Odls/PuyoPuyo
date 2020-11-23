@@ -5,10 +5,10 @@ using UnityEngine;
 public enum E_TYPE
 {
     None,
-    R,
-    Y,
-    G,
-    B
+    Red,
+    Yellow,
+    Green,
+    Blue
 }
 
 public class BoardManager : ManagerBase<BoardManager>
@@ -18,15 +18,17 @@ public class BoardManager : ManagerBase<BoardManager>
 
     [SerializeField] BoardView boardView;
 
-    E_TYPE[,] board = new E_TYPE[boardW, boardH];
+    E_TYPE[,] board = new E_TYPE[, ] {
+		{E_TYPE.Red,	E_TYPE.Red,		E_TYPE.Blue,	E_TYPE.Blue,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None},
+		{E_TYPE.Blue,	E_TYPE.Red,		E_TYPE.Red,		E_TYPE.Green,	E_TYPE.Green,	E_TYPE.Green,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None},
+		{E_TYPE.Blue,	E_TYPE.Blue,	E_TYPE.Red,		E_TYPE.Green,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None},
+		{E_TYPE.Green,	E_TYPE.Blue,	E_TYPE.Blue,	E_TYPE.Blue,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None},
+		{E_TYPE.Green,	E_TYPE.Green,	E_TYPE.Green,	E_TYPE.Blue,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None},
+		{E_TYPE.Red,	E_TYPE.Green,	E_TYPE.Blue,	E_TYPE.Blue,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None,	E_TYPE.None}
+	};
 
     private void Start()
     {
-        board[0, 5] = E_TYPE.R;
-        board[3, 7] = E_TYPE.G;
-        board[1, 10] = E_TYPE.B;
-        board[2, 10] = E_TYPE.B;
-        board[2, 11] = E_TYPE.B;
 
         boardView.Init(boardW, boardH);
         boardView.Refresh(board);

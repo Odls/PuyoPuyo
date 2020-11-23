@@ -13,4 +13,20 @@ MonoBehaviour:
   m_Name: Yellow
   m_EditorClassIdentifier: 
   mType: 2
-  mMainSprite: {fileID: 21300074, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  sprites:
+  - {fileID: 21300074, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300082, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300078, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300086, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300016, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300024, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300020, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300110, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300076, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300084, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300080, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300014, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300018, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300026, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300022, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300112, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
