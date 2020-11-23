@@ -3,26 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BoardView : MonoBehaviour {
-	[SerializeField] PuyoView puyoPrefab;
+	[SerializeField] PuyoCellView puyoPrefab;
 	[SerializeField] Transform puyoTop;
 
-	int width, heigh;
+	int width = BoardManager.boardWidth;
+	int height = BoardManager.boardHeight;
 
-	PuyoView[,] puyos;
+	PuyoCellView[,] puyos;
 
-	public void Init(int p_w, int p_h) {
-		width = p_w;
-		heigh = p_h;
-		puyos = new PuyoView[p_w, p_h];
+	public void Init() {
+		puyos = new PuyoCellView[width, height];
 
-		for (int y = 0; y < p_h; y++) {
-			for (int x = 0; x < p_w; x++) {
-				PuyoView _puyo = Instantiate(
+		for (int y = 0; y < height; y++) {
+			for (int x = 0; x < width; x++) {
+				PuyoCellView _puyo = Instantiate(
 					puyoPrefab,
 					puyoTop
 				);
 
-				_puyo.transform.localPosition = new Vector3(x * 0.64f, y * 0.64f, 0);
+				_puyo.transform.localPosition = new Vector3(x * BoardManager.cellSize, y * BoardManager.cellSize, 0);
 
 				puyos[x, y] = _puyo;
 
@@ -31,17 +30,16 @@ public class BoardView : MonoBehaviour {
 	}
 
 	#region Refresh
-	public void Refresh(E_TYPE[,] p_board) {
+	public void Refresh(E_PUYO_TYPE[,] p_board) {
 		CheckLink(p_board);
 		SetTypes(p_board);
 	}
 
-	void SetTypes(E_TYPE[,] p_board) {
-		for (int y = 0; y < heigh; y++) {
+	void SetTypes(E_PUYO_TYPE[,] p_board) {
+		for (int y = 0; y < height; y++) {
 			for (int x = 0; x < width; x++) {
 				PuyoView _puyo = puyos[x, y];
 				_puyo.SetType(p_board[x, y]);
-
 			}
 		}
 	}
@@ -51,16 +49,16 @@ public class BoardView : MonoBehaviour {
 	const int leftLinkFlag	= 1<<2;
 	const int downLinkFlag	= 1<<3;
 
-	void CheckLink(E_TYPE[,] p_board) {
+	void CheckLink(E_PUYO_TYPE[,] p_board) {
 		// Clear
-		for (int y = 0; y < heigh; y++) {
+		for (int y = 0; y < height; y++) {
 			for (int x = 0; x < width; x++) {
 				puyos[x, y].ClearLink();
 			}
 		}
 
 		// CheckLink
-		for (int y = 0; y < heigh; y++) {
+		for (int y = 0; y < height; y++) {
 			for (int x = 0; x < width; x++) {
 				// Check Left
 				if (x > 0) {

@@ -4,8 +4,8 @@ using UnityEngine;
 
 [CreateAssetMenu]
 public class PuyoData : ScriptableObject {
-	[SerializeField] E_TYPE mType;
-	public E_TYPE type { get => mType; }
+	[SerializeField] E_PUYO_TYPE mType;
+	public E_PUYO_TYPE type => mType;
 
 	[SerializeField] Sprite[] sprites;
 	public Sprite GetSpriteByFlag(int p_linkFlag) {

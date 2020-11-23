@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27a4f4d489789844aa6a080382cc947, type: 3}
   m_Name: Green
   m_EditorClassIdentifier: 
-  mType: 3
+  mType: 2
   sprites:
   - {fileID: 21300030, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
   - {fileID: 21300038, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}

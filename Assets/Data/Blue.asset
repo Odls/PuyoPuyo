@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27a4f4d489789844aa6a080382cc947, type: 3}
   m_Name: Blue
   m_EditorClassIdentifier: 
-  mType: 4
+  mType: 3
   sprites:
   - {fileID: 21300052, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
   - {fileID: 21300060, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
@@ -29,3 +29,4 @@ MonoBehaviour:
   - {fileID: 21300150, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
   - {fileID: 21300158, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
   - {fileID: 21300154, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
+  - {fileID: 21300090, guid: 2fe33a396fcb21744a33355e4b410288, type: 3}
