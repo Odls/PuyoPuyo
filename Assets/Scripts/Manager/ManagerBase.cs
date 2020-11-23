@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ManagerBase<T> : MonoBehaviour where T : ManagerBase<T>
+public abstract class ManagerBase<T> : MonoBehaviour where T : ManagerBase<T>
 {
     private static T mInstance;
     public static T instance { get => mInstance; private set => mInstance = value; }
