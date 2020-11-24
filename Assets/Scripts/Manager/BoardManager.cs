@@ -20,7 +20,10 @@ public class BoardManager : ManagerBase<BoardManager> {
 	[SerializeField] float mPlayerDownDelay = 1f;
 	public float playerDownDelay => mPlayerDownDelay;
 
-	[SerializeField] BoardView boardView;
+    [SerializeField] float mDropSpeed = 3f;
+    public float dropSpeed => mDropSpeed;
+
+    [SerializeField] BoardView boardView;
 	[SerializeField] PlayerView mPlayer;
 	public PlayerView player => mPlayer;
 
