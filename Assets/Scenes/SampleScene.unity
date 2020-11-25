@@ -293,10 +293,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mPlayerDownDelay: 1
-  mDropSpeed: 3
-  mPlayerMoveSpeed: 15
-  boardView: {fileID: 543907856}
   mPlayer: {fileID: 1355727112}
+  boardView: {fileID: 543907856}
+  dropTop: {fileID: 8080883366485372583}
+  puyoDropPrefab: {fileID: 7327686091947402299, guid: d73e487217156a747872eec33411a34e,
+    type: 3}
+  mDropSpeed: 15
+  mPlayerMoveSpeed: 15
 --- !u!1 &951667707
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +445,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3399515541357354463, guid: ad60a159a1416b9489af4204755e7748,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4015496734378554374, guid: ad60a159a1416b9489af4204755e7748,
         type: 3}
       propertyPath: m_Name
@@ -515,3 +523,9 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad60a159a1416b9489af4204755e7748, type: 3}
+--- !u!4 &8080883366485372583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3399515541357354463, guid: ad60a159a1416b9489af4204755e7748,
+    type: 3}
+  m_PrefabInstance: {fileID: 8080883366485372582}
+  m_PrefabAsset: {fileID: 0}

@@ -30,26 +30,34 @@ public class BoardView : MonoBehaviour {
 	}
 
 	#region Refresh
-	public void Refresh(E_PUYO_TYPE[,] p_board) {
-		CheckLink(p_board);
-		SetTypes(p_board);
-	}
-
-	void SetTypes(E_PUYO_TYPE[,] p_board) {
+	public void Refresh() {
+		CheckLink();
 		for (int y = 0; y < height; y++) {
 			for (int x = 0; x < width; x++) {
 				PuyoView _puyo = puyos[x, y];
-				_puyo.SetType(p_board[x, y]);
+				_puyo.Refresh();
 			}
 		}
 	}
+	public void SetTypes(E_PUYO_TYPE[,] p_board) {
+		for (int y = 0; y < height; y++) {
+			for (int x = 0; x < width; x++) {
+				SetType(x, y, p_board[x, y]);
+			}
+		}
+	}
+	public void SetType(int p_x, int p_y, E_PUYO_TYPE p_type) {
+		PuyoView _puyo = puyos[p_x, p_y];
+		_puyo.type = p_type;
+	}
+
 
 	const int rightLinkFlag	= 1;
 	const int upLinkFlag	= 1<<1;
 	const int leftLinkFlag	= 1<<2;
 	const int downLinkFlag	= 1<<3;
 
-	void CheckLink(E_PUYO_TYPE[,] p_board) {
+	void CheckLink() {
 		// Clear
 		for (int y = 0; y < height; y++) {
 			for (int x = 0; x < width; x++) {
@@ -62,14 +70,14 @@ public class BoardView : MonoBehaviour {
 			for (int x = 0; x < width; x++) {
 				// Check Left
 				if (x > 0) {
-					if (p_board[x - 1, y] == p_board[x, y]) {
+					if (puyos[x - 1, y].type == puyos[x, y].type) {
 						puyos[x - 1, y].AddLink(rightLinkFlag);
 						puyos[x, y].AddLink(leftLinkFlag);
 					}
 				}
 				// Check Down
 				if (y > 0) {
-					if (p_board[x, y - 1] == p_board[x, y]) {
+					if (puyos[x, y - 1].type == puyos[x, y].type) {
 						puyos[x, y - 1].AddLink(upLinkFlag);
 						puyos[x, y].AddLink(downLinkFlag);
 					}

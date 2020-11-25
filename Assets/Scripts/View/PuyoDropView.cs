@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class PuyoDropView : PuyoView
 {
-    public Coroutine Drop(int p_x, int p_startY, int p_endY)
-    {
-        return StartCoroutine(IeDrop(p_x, p_startY, p_endY));
-    }
+	public Coroutine Drop(DropInfo p_dropInfo) {
+		return BoardManager.instance.StartCoroutine(IeDrop(p_dropInfo));
+	}
 
-    IEnumerator IeDrop(int p_x, int p_startY, int p_endY)
+    IEnumerator IeDrop(DropInfo p_dropInfo)
     {
-        float _targetX = p_x * BoardManager.cellSize;
-        float _targetY = p_endY * BoardManager.cellSize;
-        float _y = p_startY;
+		SetType(p_dropInfo.type);
+		float _targetX = p_dropInfo.x * BoardManager.cellSize;
+        float _targetY = p_dropInfo.endY * BoardManager.cellSize;
+        float _y = p_dropInfo.startY * BoardManager.cellSize;
+		transform.localPosition = new Vector3(_targetX, _y, 0);
 
-        while (_y > _targetY)
+		while (_y > _targetY)
         {
             _y = Mathf.MoveTowards(_y, _targetY, BoardManager.instance.dropSpeed * Time.deltaTime);
             transform.localPosition = new Vector3(_targetX, _y, 0);
             yield return null;
         }
     }
+
+	public void Close() {
+		if (gameObject.activeSelf) {
+			BoardManager.instance.CloseDropPuyo(this);
+		}
+	}
 }

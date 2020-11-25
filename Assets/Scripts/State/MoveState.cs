@@ -5,12 +5,12 @@ using UnityEngine;
 public class MoveState : StateBase {
 	public override E_GAME_STATE stateEnum => E_GAME_STATE.Move;
 
-	Coroutine autoDownCoroutine = null;
 	public override void Start() {
 		base.Start();
 		autoDownCoroutine = StateManager.instance.StartCoroutine(IeAutoDown());
 	}
 	WaitForSeconds waitForSeconds = null;
+	Coroutine autoDownCoroutine = null;
 	IEnumerator IeAutoDown() {
 		if(waitForSeconds == null) {
 			waitForSeconds = new WaitForSeconds(BoardManager.instance.playerDownDelay);
@@ -40,7 +40,6 @@ public class MoveState : StateBase {
 		} else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
 			GameManager.instance.PlayeRota();
 		} else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
-			while (GameManager.instance.PlayerMove(0, -1)) {}
 			StateManager.instance.SetState(E_GAME_STATE.Stop);
 		}
 	}

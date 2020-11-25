@@ -32,7 +32,10 @@ public class StateManager : ManagerBase<StateManager> {
 			if (nowState != null) {
 				nowState.End();
 			}
+			//Debug.Log("State : " + nowState + " -> " + _state);
+
 			nowState = _state;
+
 
 			nowState.Start();
 

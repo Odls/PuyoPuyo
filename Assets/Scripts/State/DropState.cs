@@ -4,51 +4,59 @@ using UnityEngine;
 public class DropInfo
 {
     public int x, startY, endY;
+	public E_PUYO_TYPE type;
 }
 public class DropState : StateBase {
-
-    
-
     public override E_GAME_STATE stateEnum => E_GAME_STATE.Drop;
-
-    List<DropInfo> dropInfoList = new List<DropInfo>();
-
 
     public override void Start() {
 		base.Start();
 
-		bool _hasDrop = false;
+		dropAllCoroutine = StateManager.instance.StartCoroutine(IeDropAll());
+	}
 
-		for (int _x = 0; _x < BoardManager.boardWidth; _x++) {
-			int _emptyY = -1; 
-			for (int _y = 0; _y < BoardManager.boardHeight; _y++) {
-				E_PUYO_TYPE _cellType = BoardManager.instance.GetCell(_x, _y);
-				if (_cellType == E_PUYO_TYPE.Empty) {
-					if (_emptyY < 0) {
-						_emptyY = _y;
-					}
-				} else {
-					if (_emptyY >= 0) {
-						BoardManager.instance.SetCell(_x, _emptyY, _cellType);
-						BoardManager.instance.SetCell(_x, _y, E_PUYO_TYPE.Empty);
+	List<Coroutine> dropCoroutines = new List<Coroutine>();
+	Coroutine dropAllCoroutine = null;
+	List<PuyoDropView> dropPuyos = new List<PuyoDropView>();
+	IEnumerator IeDropAll() {
+		List<DropInfo> _dropInfoList = BoardManager.instance.DoDrop();
+		foreach (DropInfo _info in _dropInfoList) {
+			BoardManager.instance.SetViewType(_info.x, _info.startY, E_PUYO_TYPE.Empty);
+		}
+		BoardManager.instance.RefreshView();
 
-                        dropInfoList.Add(
-                            new DropInfo { x = _x, startY = _y, endY = _emptyY }
-                        );
 
-                        _emptyY++;
-						_hasDrop = true;
-					}
-				}
-			}
+		dropPuyos.Clear();
+		dropCoroutines.Clear();
+		foreach (DropInfo _dropInfo in _dropInfoList) {
+			PuyoDropView _ropPuyo = BoardManager.instance.GetDropPuyo();
+			dropPuyos.Add(_ropPuyo);
+			dropCoroutines.Add(_ropPuyo.Drop(_dropInfo));
 		}
 
+		foreach (Coroutine _dropCoroutine in dropCoroutines) {
+			yield return _dropCoroutine;
+		}
+		BoardManager.instance.ShowRealCells();
 
+		StateManager.instance.SetState(E_GAME_STATE.PuyoIn);
+	}
 
-		//if (_hasDrop) {
-		//	BoardManager.instance.RefreshView();
-		//}
+	public override void End() {
+		base.End();
 
-		//StateManager.instance.SetState(E_GAME_STATE.PuyoIn);
+		foreach (Coroutine _dropCoroutine in dropCoroutines) {
+			StateManager.instance.StopCoroutine(_dropCoroutine);
+		}
+		dropCoroutines.Clear();
+
+		foreach (PuyoDropView _dropPuyo in dropPuyos) {
+			_dropPuyo.Close();
+		}
+		dropPuyos.Clear();
+
+		if (dropAllCoroutine != null) {
+			StateManager.instance.StopCoroutine(dropAllCoroutine);
+		}
 	}
 }

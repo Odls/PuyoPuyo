@@ -17,12 +17,15 @@ public class GameManager : ManagerBase<GameManager> {
 	#region Pos
 	static int[] puyo2OffsetX = new int[] { 1, 0, -1, 0 };
 	static int[] puyo2OffsetY = new int[] { 0, 1, 0, -1 };
+	public int playerX { get; private set; }
+	public int playerY { get; private set; }
 
-	int playerX, playerY;
 	int puyo1X => playerX;
 	int puyo1Y => playerY;
 	int puyo2X => playerX + puyo2OffsetX[(int)direction];
 	int puyo2Y => playerY + puyo2OffsetY[(int)direction];
+
+
 	#endregion
 
 	private void Start() {
@@ -78,6 +81,6 @@ public class GameManager : ManagerBase<GameManager> {
 	public void ApplyPlayer() {
 		BoardManager.instance.SetCell(puyo1X, puyo1Y, type1);
 		BoardManager.instance.SetCell(puyo2X, puyo2Y, type2);
-		BoardManager.instance.RefreshView();
+		BoardManager.instance.ShowRealCells();
 	}
 }
