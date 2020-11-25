@@ -39,7 +39,7 @@ public class DropState : StateBase {
 		}
 		BoardManager.instance.ShowRealCells();
 
-		StateManager.instance.SetState(E_GAME_STATE.PuyoIn);
+		StateManager.instance.SetState(E_GAME_STATE.Remove);
 	}
 
 	public override void End() {

@@ -11,11 +11,34 @@ public enum E_PUYO_TYPE {
 	Blue,
 	Len
 }
+public enum E_REMOVE_DIRECTION {
+	None = -1,
+	Start,
+	Right,
+	Up,
+	Left,
+	Down
+}
+public class LinkInfo {
+	public E_PUYO_TYPE type;
+	public List<LinkRemoveInfo> removeInfos = new List<LinkRemoveInfo>();
+
+	public void Reset() {
+		type = E_PUYO_TYPE.Empty;
+		removeInfos.Clear();
+	}
+}
+public struct LinkRemoveInfo {
+	public int x, y;
+	public E_REMOVE_DIRECTION direction;
+}
 
 public class BoardManager : ManagerBase<BoardManager> {
 	public const int boardWidth = 6;
 	public const int boardHeight = 14;
+	public const int dieHeight = 12;
 	public const float cellSize = 0.64f;
+	public const int removeCount = 4;
 
 	[SerializeField] float mPlayerDownDelay = 1f;
 	public float playerDownDelay => mPlayerDownDelay;
@@ -32,9 +55,10 @@ public class BoardManager : ManagerBase<BoardManager> {
 	E_PUYO_TYPE[,] cells = new E_PUYO_TYPE[boardWidth, boardHeight];
 
 	private void Start() {
-		for (int y = 0; y < boardHeight; y++) {
-			for (int x = 0; x < boardWidth; x++) {
-				cells[x, y] = E_PUYO_TYPE.Empty;
+		for (int _y = 0; _y < boardHeight; _y++) {
+			for (int _x = 0; _x < boardWidth; _x++) {
+				cells[_x, _y] = E_PUYO_TYPE.Empty;
+				linkRemoveInfos[_x, _y] = new LinkRemoveInfo { x = _x, y = _y, direction=E_REMOVE_DIRECTION.None };
 			}
 		}
 		boardView.Init();
@@ -128,5 +152,110 @@ public class BoardManager : ManagerBase<BoardManager> {
 	}
 	#endregion
 
+	#region RemoveLink
+	Queue<LinkRemoveInfo> tempRemoveInfoQueue = new Queue<LinkRemoveInfo>();
+	LinkRemoveInfo[,] linkRemoveInfos = new LinkRemoveInfo[boardWidth, boardHeight];
+	List<LinkInfo> linkInfoList = new List<LinkInfo>();
+	public List<LinkInfo> DoRemoveLink() {
+		linkInfoList.Clear();
 
+		for (int _x = 0; _x < boardWidth; _x++) {
+			for (int _y = 0; _y < dieHeight; _y++) {
+				linkRemoveInfos[_x, _y].direction = E_REMOVE_DIRECTION.None;
+			}
+		}
+
+		LinkInfo _linkInfo = new LinkInfo();
+		for (int _x = 0; _x < boardWidth; _x++) {
+			for (int _y = 0; _y < dieHeight; _y++) {
+				if(cells[_x, _y] != E_PUYO_TYPE.Empty) {
+					LinkRemoveInfo _nowInfo = linkRemoveInfos[_x, _y];
+					if (_nowInfo.direction == E_REMOVE_DIRECTION.None) {
+						_linkInfo.Reset();
+						_linkInfo.type = cells[_x, _y];
+						tempRemoveInfoQueue.Clear();
+
+						AddRemoveInfo(_linkInfo, _x, _y, E_REMOVE_DIRECTION.Start, tempRemoveInfoQueue);
+
+						while (tempRemoveInfoQueue.Count > 0) {
+							CheckLink(_linkInfo, tempRemoveInfoQueue);
+						}
+
+						if(_linkInfo.removeInfos.Count >= removeCount) {
+							linkInfoList.Add(_linkInfo);
+							_linkInfo = new LinkInfo();
+						}
+					}
+				}
+			}
+		}
+
+		RemoveByInfo();
+
+		return linkInfoList;
+	}
+
+	void CheckLink(LinkInfo p_linkInfo, Queue<LinkRemoveInfo> p_removeInfoQueue) {
+		LinkRemoveInfo _removeInfo = p_removeInfoQueue.Dequeue();
+
+		switch (_removeInfo.direction) {
+		case E_REMOVE_DIRECTION.Start:
+			AddRemoveInfo(p_linkInfo, _removeInfo.x - 1, _removeInfo.y, E_REMOVE_DIRECTION.Left, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x + 1, _removeInfo.y, E_REMOVE_DIRECTION.Right, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x, _removeInfo.y + 1, E_REMOVE_DIRECTION.Up, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x, _removeInfo.y - 1, E_REMOVE_DIRECTION.Down, p_removeInfoQueue);
+			break;
+		case E_REMOVE_DIRECTION.Right:
+			AddRemoveInfo(p_linkInfo, _removeInfo.x + 1, _removeInfo.y, E_REMOVE_DIRECTION.Right, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x, _removeInfo.y + 1, E_REMOVE_DIRECTION.Up, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x, _removeInfo.y - 1, E_REMOVE_DIRECTION.Down, p_removeInfoQueue);
+			break;
+		case E_REMOVE_DIRECTION.Up:
+			AddRemoveInfo(p_linkInfo, _removeInfo.x - 1, _removeInfo.y, E_REMOVE_DIRECTION.Left, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x + 1, _removeInfo.y, E_REMOVE_DIRECTION.Right, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x, _removeInfo.y + 1, E_REMOVE_DIRECTION.Up, p_removeInfoQueue);
+			break;
+		case E_REMOVE_DIRECTION.Left:
+			AddRemoveInfo(p_linkInfo, _removeInfo.x - 1, _removeInfo.y, E_REMOVE_DIRECTION.Left, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x, _removeInfo.y + 1, E_REMOVE_DIRECTION.Up, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x, _removeInfo.y - 1, E_REMOVE_DIRECTION.Down, p_removeInfoQueue);
+			break;
+		case E_REMOVE_DIRECTION.Down:
+			AddRemoveInfo(p_linkInfo, _removeInfo.x - 1, _removeInfo.y, E_REMOVE_DIRECTION.Left, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x + 1, _removeInfo.y, E_REMOVE_DIRECTION.Right, p_removeInfoQueue);
+			AddRemoveInfo(p_linkInfo, _removeInfo.x, _removeInfo.y - 1, E_REMOVE_DIRECTION.Down, p_removeInfoQueue);
+			break;
+		}
+	}
+
+	void AddRemoveInfo(LinkInfo p_linkInfo, int p_x, int p_y, E_REMOVE_DIRECTION p_direction, Queue<LinkRemoveInfo> p_removeInfoQueue) {
+		if((p_x >= 0) && (p_x < boardWidth) && (p_y >= 0) && (p_y < dieHeight)) {
+			if (cells[p_x, p_y] == p_linkInfo.type) {
+				LinkRemoveInfo _nowInfo = linkRemoveInfos[p_x, p_y];
+				if(_nowInfo.direction == E_REMOVE_DIRECTION.None) {
+					_nowInfo.direction = p_direction;
+					linkRemoveInfos[p_x, p_y] = _nowInfo;
+					p_removeInfoQueue.Enqueue(_nowInfo);
+					p_linkInfo.removeInfos.Add(_nowInfo);
+				}
+			}
+		}
+	}
+
+	void RemoveByInfo() {
+		foreach(var _linkInfo in linkInfoList) {
+			foreach (var _removeInfo in _linkInfo.removeInfos) {
+				SetCell(_removeInfo.x, _removeInfo.y, E_PUYO_TYPE.Empty);
+			}
+		}
+	}
+	#endregion
+
+	public void RemoveDiePuyo() {
+		for (int y = dieHeight; y < boardHeight; y++) {
+			for (int x = 0; x < boardWidth; x++) {
+				cells[x, y] = E_PUYO_TYPE.Empty;
+			}
+		}
+	}
 }
