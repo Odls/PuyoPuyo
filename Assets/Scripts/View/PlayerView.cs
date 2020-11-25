@@ -18,22 +18,31 @@ public class PlayerView : MonoBehaviour {
 	};
 
 	[SerializeField] PuyoView puyo1, puyo2;
-	
+
 	public E_MOVING_PUYO_DIRECTION direction {
 		set {
 			puyo2.transform.localPosition = puyo2Pos[(int)value];
 		}
 	}
 
-	private void Awake() {
+	void Awake() {
 		direction = E_MOVING_PUYO_DIRECTION.Up;
 	}
-	
+
+	void Update() {
+		transform.localPosition = Vector3.MoveTowards(transform.localPosition, targetPos, BoardManager.instance.playerMoveSpeed * BoardManager.cellSize * Time.deltaTime);
+	}
+
 	public void SetType(E_PUYO_TYPE p_type1, E_PUYO_TYPE p_type2) {
 		puyo1.SetType(p_type1);
 		puyo2.SetType(p_type2);
 	}
-	public void SetPos(int p_x, int p_y) {
-		transform.localPosition = new Vector3(BoardManager.cellSize*p_x, BoardManager.cellSize*p_y, 0);
+
+	Vector3 targetPos = Vector3.zero;
+	public void MoveTo(int p_x, int p_y, bool p_jumpTo = false) {
+		targetPos = new Vector3(BoardManager.cellSize*p_x, BoardManager.cellSize*p_y, 0);
+		if (p_jumpTo) {
+			transform.localPosition = targetPos;
+		}
 	}
 }

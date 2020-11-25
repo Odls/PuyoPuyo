@@ -44,14 +44,14 @@ public class GameManager : ManagerBase<GameManager> {
 	public void SetPos(int p_x, int p_y) {
 		playerX = p_x;
 		playerY = p_y;
-		BoardManager.instance.player.SetPos(p_x, p_y);
+		BoardManager.instance.player.MoveTo(p_x, p_y, true);
 	}
 	public bool PlayerMove(int p_x, int p_y) {
 		playerX += p_x;
 		playerY += p_y;
 
 		if(BoardManager.instance.IsEmpty(puyo1X, puyo1Y) && BoardManager.instance.IsEmpty(puyo2X, puyo2Y)) {
-			BoardManager.instance.player.SetPos(playerX, playerY);
+			BoardManager.instance.player.MoveTo(playerX, playerY);
 			return true;
 		} else {
 			playerX -= p_x;
