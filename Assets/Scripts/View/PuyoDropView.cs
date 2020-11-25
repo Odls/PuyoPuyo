@@ -4,7 +4,15 @@ using UnityEngine;
 
 public class PuyoDropView : PuyoView
 {
-	public Coroutine Drop(DropInfo p_dropInfo) {
+    [SerializeField] Animator animator;
+
+    WaitForSeconds waitHitAnimation;
+    private void Awake()
+    {
+        waitHitAnimation = new WaitForSeconds(0.5f);
+    }
+
+    public Coroutine Drop(DropInfo p_dropInfo) {
 		return BoardManager.instance.StartCoroutine(IeDrop(p_dropInfo));
 	}
 
@@ -22,6 +30,11 @@ public class PuyoDropView : PuyoView
             transform.localPosition = new Vector3(_targetX, _y, 0);
             yield return null;
         }
+
+        animator.SetInteger("hitNumber", Random.Range(1, 4));
+
+        animator.Play("Hit");
+        yield return waitHitAnimation;
     }
 
 	public void Close() {
