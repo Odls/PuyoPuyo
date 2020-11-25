@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mPlayerDownDelay: 1
+  mDropSpeed: 3
   mPlayerMoveSpeed: 15
   boardView: {fileID: 543907856}
   mPlayer: {fileID: 1355727112}
