@@ -40,6 +40,7 @@ public class MoveState : StateBase {
 		} else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
 			GameManager.instance.PlayeRota();
 		} else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
+			DropState.isPlayerDown = true;
 			StateManager.instance.SetState(E_GAME_STATE.Stop);
 		}
 	}

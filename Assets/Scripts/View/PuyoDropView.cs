@@ -12,11 +12,11 @@ public class PuyoDropView : PuyoView
         waitHitAnimation = new WaitForSeconds(0.5f);
     }
 
-    public Coroutine Drop(DropInfo p_dropInfo) {
-		return BoardManager.instance.StartCoroutine(IeDrop(p_dropInfo));
+    public Coroutine Drop(DropInfo p_dropInfo, float p_dropSpeed) {
+		return BoardManager.instance.StartCoroutine(IeDrop(p_dropInfo, p_dropSpeed));
 	}
 
-    IEnumerator IeDrop(DropInfo p_dropInfo)
+    IEnumerator IeDrop(DropInfo p_dropInfo, float p_dropSpeed)
     {
 		SetType(p_dropInfo.type);
 		float _targetX = p_dropInfo.x * BoardManager.cellSize;
@@ -26,7 +26,7 @@ public class PuyoDropView : PuyoView
 
 		while (_y > _targetY)
         {
-            _y = Mathf.MoveTowards(_y, _targetY, BoardManager.instance.dropSpeed * Time.deltaTime);
+            _y = Mathf.MoveTowards(_y, _targetY, p_dropSpeed * Time.deltaTime);
             transform.localPosition = new Vector3(_targetX, _y, 0);
             yield return null;
         }
@@ -35,11 +35,8 @@ public class PuyoDropView : PuyoView
 
         animator.Play("Hit");
         yield return waitHitAnimation;
-    }
-
+	}
 	public void Close() {
-		if (gameObject.activeSelf) {
-			BoardManager.instance.CloseDropPuyo(this);
-		}
+		BoardManager.instance.CloseDropPuyo(this);
 	}
 }

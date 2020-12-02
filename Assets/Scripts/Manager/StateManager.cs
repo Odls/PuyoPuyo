@@ -22,6 +22,7 @@ public class StateManager : ManagerBase<StateManager> {
 		if (stateDict.ContainsKey(p_stateEnum)) {
 			Debug.LogError("Already Has State : " + p_state);
 		} else {
+			p_state.Init();
 			stateDict.Add(p_stateEnum, p_state);
 		}
 	}

@@ -5,6 +5,8 @@ using UnityEngine;
 public class BoardView : MonoBehaviour {
 	[SerializeField] PuyoCellView puyoPrefab;
 	[SerializeField] Transform puyoTop;
+	public PuyoDropPool puyoDropPool = new PuyoDropPool();
+	public PuyoRemovePool puyoRemovePool = new PuyoRemovePool();
 
 	int width = BoardManager.boardWidth;
 	int height = BoardManager.boardHeight;

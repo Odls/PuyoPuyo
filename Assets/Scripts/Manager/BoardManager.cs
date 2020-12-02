@@ -33,6 +33,30 @@ public struct LinkRemoveInfo {
 	public E_REMOVE_DIRECTION direction;
 }
 
+[System.Serializable]
+public class ObjPool<T> where T : MonoBehaviour {
+	[SerializeField] Transform dropTop;
+	[SerializeField] T prefab;
+	Queue<T> queue = new Queue<T>();
+
+	public T GetObj() {
+		T _obj;
+
+		if (queue.Count > 0) {
+			_obj = queue.Dequeue();
+		} else {
+			_obj = Object.Instantiate(prefab, dropTop);
+		}
+		_obj.gameObject.SetActive(true);
+		return _obj;
+	}
+	public void CloseObj(T p_obj) {
+		p_obj.gameObject.SetActive(false);
+		queue.Enqueue(p_obj);
+	}
+}
+[System.Serializable] public class PuyoDropPool : ObjPool<PuyoDropView> {}
+[System.Serializable] public class PuyoRemovePool : ObjPool<PuyoRemoveView> { }
 public class BoardManager : ManagerBase<BoardManager> {
 	public const int boardWidth = 6;
 	public const int boardHeight = 14;
@@ -96,31 +120,11 @@ public class BoardManager : ManagerBase<BoardManager> {
 	}
 	#endregion
 
-	#region DropObjectPool
-	[SerializeField] Transform dropTop;
-	[SerializeField] PuyoDropView puyoDropPrefab;
-	Queue<PuyoDropView> dropQueue = new Queue<PuyoDropView>();
-
-	public PuyoDropView GetDropPuyo() {
-		PuyoDropView _dropPuyo;
-
-		if (dropQueue.Count > 0) {
-			_dropPuyo = dropQueue.Dequeue();
-		} else {
-			_dropPuyo = Instantiate(puyoDropPrefab, dropTop);
-		}
-		_dropPuyo.gameObject.SetActive(true);
-		return _dropPuyo;
-	}
-	public void CloseDropPuyo(PuyoDropView p_dropPuyo) {
-		p_dropPuyo.gameObject.SetActive(false);
-		dropQueue.Enqueue(p_dropPuyo);
-	}
-	#endregion
-
 	#region Drop
 	[SerializeField] float mDropSpeed = 3f;
 	public float dropSpeed => mDropSpeed;
+	[SerializeField] float mPlayerDownSpeed = 10f;
+	public float playerDownSpeed => mPlayerDownSpeed;
 	[SerializeField] float mPlayerMoveSpeed = 5f;
 
 	List<DropInfo> dropInfoList = new List<DropInfo>();
@@ -150,6 +154,9 @@ public class BoardManager : ManagerBase<BoardManager> {
 		}
 		return dropInfoList;
 	}
+
+	public PuyoDropView GetDropPuyo() => boardView.puyoDropPool.GetObj();
+	public void CloseDropPuyo(PuyoDropView p_dropPuyo) => boardView.puyoDropPool.CloseObj(p_dropPuyo);
 	#endregion
 
 	#region RemoveLink
@@ -249,9 +256,14 @@ public class BoardManager : ManagerBase<BoardManager> {
 			}
 		}
 	}
+
+	public PuyoRemoveView GetRemovePuyo() => boardView.puyoRemovePool.GetObj();
+	public void CloseRemovePuyo(PuyoRemoveView p_removePuyo) => boardView.puyoRemovePool.CloseObj(p_removePuyo);
 	#endregion
 
-	public void RemoveDiePuyo() {
+
+
+	public void RemoveOutRangePuyo() {
 		for (int y = dieHeight; y < boardHeight; y++) {
 			for (int x = 0; x < boardWidth; x++) {
 				cells[x, y] = E_PUYO_TYPE.Empty;

@@ -8,6 +8,7 @@ public class DropInfo
 }
 public class DropState : StateBase {
     public override E_GAME_STATE stateEnum => E_GAME_STATE.Drop;
+	public static bool isPlayerDown = true;
 
     public override void Start() {
 		base.Start();
@@ -25,14 +26,14 @@ public class DropState : StateBase {
 		}
 		BoardManager.instance.RefreshView();
 
-
-		dropPuyos.Clear();
 		dropCoroutines.Clear();
 		foreach (DropInfo _dropInfo in _dropInfoList) {
-			PuyoDropView _ropPuyo = BoardManager.instance.GetDropPuyo();
-			dropPuyos.Add(_ropPuyo);
-			dropCoroutines.Add(_ropPuyo.Drop(_dropInfo));
+			PuyoDropView _dropPuyo = BoardManager.instance.GetDropPuyo();
+			dropPuyos.Add(_dropPuyo);
+			float _speed = (isPlayerDown? BoardManager.instance.playerDownSpeed: BoardManager.instance.dropSpeed);
+			dropCoroutines.Add(_dropPuyo.Drop(_dropInfo, _speed));
 		}
+		isPlayerDown = false;
 
 		foreach (Coroutine _dropCoroutine in dropCoroutines) {
 			yield return _dropCoroutine;

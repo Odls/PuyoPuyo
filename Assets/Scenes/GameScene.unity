@@ -207,7 +207,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 4.6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -231,7 +231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0.57, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -295,10 +295,8 @@ MonoBehaviour:
   mPlayerDownDelay: 1
   mPlayer: {fileID: 1355727112}
   boardView: {fileID: 543907856}
-  dropTop: {fileID: 8080883366485372583}
-  puyoDropPrefab: {fileID: 7327686091947402299, guid: d73e487217156a747872eec33411a34e,
-    type: 3}
   mDropSpeed: 15
+  mPlayerDownSpeed: 50
   mPlayerMoveSpeed: 15
 --- !u!1 &951667707
 GameObject:
@@ -463,7 +461,7 @@ PrefabInstance:
     - target: {fileID: 6005808656198076202, guid: ad60a159a1416b9489af4204755e7748,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.55
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6005808656198076202, guid: ad60a159a1416b9489af4204755e7748,
         type: 3}
@@ -515,17 +513,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7903278028400046857, guid: ad60a159a1416b9489af4204755e7748,
-        type: 3}
-      propertyPath: puyoPrefab
-      value: 
-      objectReference: {fileID: 9147617450745731121, guid: 7b1887086685eab47972197023fee62f,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad60a159a1416b9489af4204755e7748, type: 3}
---- !u!4 &8080883366485372583 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3399515541357354463, guid: ad60a159a1416b9489af4204755e7748,
-    type: 3}
-  m_PrefabInstance: {fileID: 8080883366485372582}
-  m_PrefabAsset: {fileID: 0}
