@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : ManagerBase<GameManager> {
+	StateMachine stateMachine = new StateMachine();
+
 	private void Start() {
 		boardView.Init();
 		boardView.SetCells(cells);
 		boardView.Refresh();
+
+		stateMachine.AddState(new PuyoInState(stateMachine));
+
+		stateMachine.SetState(E_GAME_STATE.PuyoIn);
 	}
 
 	#region Player
