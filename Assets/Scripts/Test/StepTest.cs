@@ -3,20 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StepTest : MonoBehaviour{
-	[SerializeField] BoardView boardView;
-	BoardCells cells = new BoardCells();
-
 	private void Start() {
-		for (int _y = 0; _y < BoardManager.boardHeight; _y++) {
-			for (int _x = 0; _x < BoardManager.boardWidth; _x++) {
-				var _type = PuyoManager.GetRandomType();
-				cells.SetCell(_x, _y, _type);
-			}
-		}
+		GameManager.instance.SetPlayerPos(2, 12);
+		GameManager.instance.RandomType();
+		GameManager.instance.direction = E_MOVING_PUYO_DIRECTION.Up;
 
-		boardView.Init();
-		boardView.SetCells(cells);
-		boardView.Refresh();
 	}
 
+	private void Update() {
+		if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) {
+			GameManager.instance.PlayerMove(-1, 0);
+		} else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
+			GameManager.instance.PlayerMove(1, 0);
+		} else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
+			GameManager.instance.PlayerMove(0, 1);
+		} else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) {
+			GameManager.instance.PlayerMove(0, -1);
+		} else if (Input.GetKeyDown(KeyCode.F)) {
+			GameManager.instance.PlayeRota();
+		} else if (Input.GetKeyDown(KeyCode.Space)) {
+			GameManager.instance.ApplyPlayer();
+			GameManager.instance.RandomType();
+		}
+	}
 }
