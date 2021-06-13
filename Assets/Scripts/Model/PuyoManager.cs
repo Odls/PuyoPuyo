@@ -25,7 +25,7 @@ public class PuyoManager : ManagerBase<PuyoManager> {
 		}
 	}
 
-	public E_PUYO_TYPE GetRandomType() {
+	public static E_PUYO_TYPE GetRandomType() {
 		return (E_PUYO_TYPE)Random.Range(0, (int)E_PUYO_TYPE.Len);
 	}
 }
