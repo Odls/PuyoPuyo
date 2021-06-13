@@ -5,7 +5,7 @@ using UnityEngine;
 public class RemoveState : StateBase {
 	public override E_GAME_STATE stateEnum => E_GAME_STATE.Remove;
 
-    WaitForSeconds waitRemoveAnimation;
+	WaitForSeconds waitRemoveAnimation;
 	public override void Init() {
 		base.Init();
 		waitRemoveAnimation = new WaitForSeconds(0.5f);

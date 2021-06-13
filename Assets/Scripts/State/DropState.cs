@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class DropInfo
-{
-    public int x, startY, endY;
+public class DropInfo {
+	public int x, startY, endY;
 	public E_PUYO_TYPE type;
 }
 public class DropState : StateBase {
-    public override E_GAME_STATE stateEnum => E_GAME_STATE.Drop;
+	public override E_GAME_STATE stateEnum => E_GAME_STATE.Drop;
 	public static bool isPlayerDown = true;
 
-    public override void Start() {
+	public override void Start() {
 		base.Start();
 
 		dropAllCoroutine = StateManager.instance.StartCoroutine(IeDropAll());
@@ -30,7 +29,7 @@ public class DropState : StateBase {
 		foreach (DropInfo _dropInfo in _dropInfoList) {
 			PuyoDropView _dropPuyo = BoardManager.instance.GetDropPuyo();
 			dropPuyos.Add(_dropPuyo);
-			float _speed = (isPlayerDown? BoardManager.instance.playerDownSpeed: BoardManager.instance.dropSpeed);
+			float _speed = (isPlayerDown ? BoardManager.instance.playerDownSpeed : BoardManager.instance.dropSpeed);
 			dropCoroutines.Add(_dropPuyo.Drop(_dropInfo, _speed));
 		}
 		isPlayerDown = false;

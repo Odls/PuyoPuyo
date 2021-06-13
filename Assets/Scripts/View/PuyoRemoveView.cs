@@ -2,22 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PuyoRemoveView : PuyoView
-{
-    [SerializeField] Animator animator;
+public class PuyoRemoveView : PuyoView {
+	[SerializeField] Animator animator;
 
-    WaitForSeconds waitRemoveAnimation;
-    private void Awake()
-    {
-        waitRemoveAnimation = new WaitForSeconds(1.5f);
-    }
+	WaitForSeconds waitRemoveAnimation;
+	private void Awake() {
+		waitRemoveAnimation = new WaitForSeconds(1.5f);
+	}
 
-    public Coroutine Remove(E_PUYO_TYPE p_type, LinkRemoveInfo p_removeInfo) {
+	public Coroutine Remove(E_PUYO_TYPE p_type, LinkRemoveInfo p_removeInfo) {
 		return BoardManager.instance.StartCoroutine(IeRemove(p_type, p_removeInfo));
 	}
 
-    IEnumerator IeRemove(E_PUYO_TYPE p_type, LinkRemoveInfo p_removeInfo)
-    {
+	IEnumerator IeRemove(E_PUYO_TYPE p_type, LinkRemoveInfo p_removeInfo) {
 		animator.speed = 0;
 		SetType(p_type);
 		float _x = p_removeInfo.x * BoardManager.cellSize;
