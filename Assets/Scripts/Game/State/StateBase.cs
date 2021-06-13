@@ -26,4 +26,15 @@ public abstract class StateBase {
 	}
 	public virtual void Update() {}
 	public virtual void End() {}
+
+	protected Coroutine StartCoroutine(IEnumerator p_routine) {
+		return GameManager.instance.StartCoroutine(p_routine);
+	}
+
+	protected void StopCoroutine(ref Coroutine p_coroutine) {
+		if (p_coroutine != null) {
+			GameManager.instance.StopCoroutine(p_coroutine);
+			p_coroutine = null;
+		}
+	}
 }

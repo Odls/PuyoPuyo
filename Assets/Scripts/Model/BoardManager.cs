@@ -12,6 +12,12 @@ public class BoardManager : ManagerBase<BoardManager> {
 	#region Player
 	[SerializeField] float mPlayerMoveSpeed = 5f;
 	public float playerMoveSpeed => mPlayerMoveSpeed;
+
+	[SerializeField] float mPlayerDownDelay = 1f;
+	public float playerDownDelay => mPlayerDownDelay;
+
+	[SerializeField] float mPlayerDownSpeed = 10f;
+	public float playerDownSpeed => mPlayerDownSpeed;
 	#endregion
 
 

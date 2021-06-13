@@ -11,8 +11,13 @@ public class GameManager : ManagerBase<GameManager> {
 		boardView.Refresh();
 
 		stateMachine.AddState(new PuyoInState(stateMachine));
+		stateMachine.AddState(new MoveState(stateMachine));
 
 		stateMachine.SetState(E_GAME_STATE.PuyoIn);
+	}
+
+	void Update() {
+		stateMachine.Update();
 	}
 
 	#region Player
@@ -63,6 +68,8 @@ public class GameManager : ManagerBase<GameManager> {
 	int puyo2X => playerX + puyo2OffsetX[(int)direction];
 	int puyo2Y => playerY + puyo2OffsetY[(int)direction];
 
+	public bool isPlayerDown { get; private set; }
+
 	public void SetPlayerType(E_PUYO_TYPE p_type1, E_PUYO_TYPE p_type2) {
 		type1 = p_type1;
 		type2 = p_type2;
@@ -87,6 +94,11 @@ public class GameManager : ManagerBase<GameManager> {
 			}
 		}
 		return false;
+	}
+
+	public void PlayerDown() {
+		isPlayerDown = true;
+		stateMachine.SetState(E_GAME_STATE.Stop);
 	}
 	#endregion
 

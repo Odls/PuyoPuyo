@@ -5,7 +5,7 @@ using UnityEngine;
 public class PuyoInState : StateBase{
 	public PuyoInState(StateMachine p_stateMachine) : base(p_stateMachine) { }
 	public override E_GAME_STATE stateEnum => E_GAME_STATE.PuyoIn;
-	protected override bool enablePlayer => true;
+	protected override bool enablePlayer => false;
 	public override void Start() {
 		base.Start();
 
