@@ -1,5 +1,5 @@
 {
-    "name": "Data",
+    "name": "Model",
     "references": [
         "GUID:90a49ab45874542408e9f521d6f5aaea"
     ],
