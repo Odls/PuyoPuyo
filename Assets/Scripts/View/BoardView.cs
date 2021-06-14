@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+[System.Serializable] public class PuyoDropPool : ObjPool<PuyoDropView> { }
 
 public class BoardView : MonoBehaviour {
 	[SerializeField] PuyoCellView puyoPrefab;
 	[SerializeField] Transform puyoTop;
+	public PuyoDropPool puyoDropPool = new PuyoDropPool();
 
 	static int width => BoardManager.boardWidth;
 	static int height => BoardManager.boardHeight;
@@ -37,12 +39,13 @@ public class BoardView : MonoBehaviour {
 			}
 		}
 	}
-	public void SetCells(BoardCells p_cells) {
+	public void SetCells(BoardCells p_cells, bool p_autoRefresh = true) {
 		for (int y = 0; y < height; y++) {
 			for (int x = 0; x < width; x++) {
 				SetCell(x, y, p_cells[x, y]);
 			}
 		}
+		if (p_autoRefresh) { Refresh(); }
 	}
 	public void SetCell(int p_x, int p_y, E_PUYO_TYPE p_type) {
 		PuyoView _puyo = puyos[p_x, p_y];
@@ -82,6 +85,16 @@ public class BoardView : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	#endregion
+
+	#region Drop
+
+	public PuyoDropView GetDropPuyo() => puyoDropPool.GetObj();
+	public void CloseDropPuyo(PuyoDropView p_dropPuyo) {
+		p_dropPuyo.Close();
+		puyoDropPool.CloseObj(p_dropPuyo);
 	}
 	#endregion
 }

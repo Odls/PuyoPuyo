@@ -467,4 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624074bfa66a5c74381239e338e06e3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mDropSpeed: 15
   mPlayerMoveSpeed: 15
+  mPlayerDownDelay: 1
+  mPlayerDownSpeed: 50

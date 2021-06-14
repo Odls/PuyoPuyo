@@ -9,6 +9,9 @@ public class BoardManager : ManagerBase<BoardManager> {
 	public const float cellSize = 0.64f;
 	public const int removeCount = 4;
 
+	[SerializeField] float mDropSpeed = 3f;
+	public float dropSpeed => mDropSpeed;
+
 	#region Player
 	[SerializeField] float mPlayerMoveSpeed = 5f;
 	public float playerMoveSpeed => mPlayerMoveSpeed;

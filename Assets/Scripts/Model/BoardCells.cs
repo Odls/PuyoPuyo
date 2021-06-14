@@ -39,4 +39,33 @@ public class BoardCells {
 	}
 	#endregion
 
+	#region Drop
+	List<DropInfo> dropInfoList = new List<DropInfo>();
+	public List<DropInfo> DoDrop() {
+		dropInfoList.Clear();
+		for (int _x = 0; _x < width; _x++) {
+			int _emptyY = -1;
+			for (int _y = 0; _y < height; _y++) {
+				E_PUYO_TYPE _cellType = this[_x, _y];
+				if (_cellType == E_PUYO_TYPE.Empty) {
+					if (_emptyY < 0) {
+						_emptyY = _y;
+					}
+				} else {
+					if (_emptyY >= 0) {
+						SetCell(_x, _emptyY, _cellType);
+						SetCell(_x, _y, E_PUYO_TYPE.Empty);
+
+						dropInfoList.Add(
+							new DropInfo { x = _x, startY = _y, endY = _emptyY, type = _cellType }
+						);
+
+						_emptyY++;
+					}
+				}
+			}
+		}
+		return dropInfoList;
+	}
+	#endregion
 }
