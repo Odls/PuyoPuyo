@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable] public class PuyoDropPool : ObjPool<PuyoDropView> { }
+[System.Serializable] public class PuyoRemovePool : ObjPool<PuyoRemoveView> { }
 
 public class BoardView : MonoBehaviour {
 	[SerializeField] PuyoCellView puyoPrefab;
 	[SerializeField] Transform puyoTop;
-	public PuyoDropPool puyoDropPool = new PuyoDropPool();
 
 	static int width => BoardManager.boardWidth;
 	static int height => BoardManager.boardHeight;
@@ -90,11 +90,17 @@ public class BoardView : MonoBehaviour {
 	#endregion
 
 	#region Drop
-
+	public PuyoDropPool puyoDropPool = new PuyoDropPool();
 	public PuyoDropView GetDropPuyo() => puyoDropPool.GetObj();
 	public void CloseDropPuyo(PuyoDropView p_dropPuyo) {
 		p_dropPuyo.Close();
 		puyoDropPool.CloseObj(p_dropPuyo);
 	}
 	#endregion
+
+	#region Remove
+	public PuyoRemovePool puyoRemovePool = new PuyoRemovePool();
+	public PuyoRemoveView GetRemovePuyo() => puyoRemovePool.GetObj();
+	public void CloseRemovePuyo(PuyoRemoveView p_removePuyo) => puyoRemovePool.CloseObj(p_removePuyo);
+#endregion
 }

@@ -13,6 +13,7 @@ public class GameManager : ManagerBase<GameManager> {
 		stateMachine.AddState(new MoveState(stateMachine));
 		stateMachine.AddState(new StopState(stateMachine));
 		stateMachine.AddState(new DropState(stateMachine, boardView, cells));
+		stateMachine.AddState(new RemoveState(stateMachine, boardView, cells));
 
 		stateMachine.SetState(E_GAME_STATE.PuyoIn);
 	}

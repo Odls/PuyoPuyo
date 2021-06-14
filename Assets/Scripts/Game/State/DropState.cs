@@ -38,7 +38,7 @@ public class DropState : StateBase {
 		}
 		boardView.SetCells(cells);
 
-		stateMachine.SetState(E_GAME_STATE.PuyoIn);
+		stateMachine.SetState(E_GAME_STATE.Remove);
 	}
 
 	public override void End() {
