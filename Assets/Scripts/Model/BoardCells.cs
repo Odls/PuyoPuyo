@@ -25,6 +25,7 @@ public class BoardCells {
 		for (int _y = 0; _y < height; _y++) {
 			for (int _x = 0; _x < width; _x++) {
 				cells[_x, _y] = E_PUYO_TYPE.Empty;
+				linkRemoveInfos[_x, _y] = new LinkRemoveInfo { x = _x, y = _y, direction = E_REMOVE_DIRECTION.None };
 			}
 		}
 	}
@@ -92,12 +93,13 @@ public class BoardCells {
 			}
 		}
 
-		LinkInfo _linkInfo = new LinkInfo();
+		LinkInfo _linkInfo = null;
 		for (int _x = 0; _x < width; _x++) {
 			for (int _y = 0; _y < dieHeight; _y++) {
 				if (cells[_x, _y] != E_PUYO_TYPE.Empty) {
 					LinkRemoveInfo _nowInfo = linkRemoveInfos[_x, _y];
 					if (_nowInfo.direction == E_REMOVE_DIRECTION.None) {
+						if (_linkInfo == null) { _linkInfo = new LinkInfo(); }
 						_linkInfo.Reset();
 						_linkInfo.type = cells[_x, _y];
 						tempRemoveInfoQueue.Clear();
@@ -110,7 +112,7 @@ public class BoardCells {
 
 						if (_linkInfo.removeInfos.Count >= removeCount) {
 							linkInfoList.Add(_linkInfo);
-							_linkInfo = new LinkInfo();
+							_linkInfo = null;
 						}
 					}
 				}
