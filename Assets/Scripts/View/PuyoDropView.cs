@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PuyoDropView : PuyoView {
+	[SerializeField] Animator animator;
+
+	WaitForSeconds waitHitAnimation;
+	private void Awake() {
+		waitHitAnimation = new WaitForSeconds(0.5f);
+	}
 
 	public Coroutine dropCoroutine { get; private set; }
 	public Coroutine Drop(DropInfo p_dropInfo, float p_dropSpeed) {
@@ -27,6 +33,9 @@ public class PuyoDropView : PuyoView {
 			transform.localPosition = new Vector3(_targetX, _y, 0);
 			yield return null;
 		}
+
+		animator.Play("Hit");
+		yield return waitHitAnimation;
 	}
 
 	public void Close() {
