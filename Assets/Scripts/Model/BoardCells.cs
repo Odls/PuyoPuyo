@@ -41,12 +41,15 @@ public class BoardCells {
 		return this[p_x, p_y] == E_PUYO_TYPE.Empty;
 	}
 
-	public void RemoveOutRangePuyo() {
+	public bool CheckHasOutRangePuyo() {
 		for (int y = dieHeight; y < height; y++) {
 			for (int x = 0; x < width; x++) {
-				cells[x, y] = E_PUYO_TYPE.Empty;
+				if(cells[x, y] != E_PUYO_TYPE.Empty) {
+					return true;
+				}
 			}
 		}
+		return false;
 	}
 	#endregion
 

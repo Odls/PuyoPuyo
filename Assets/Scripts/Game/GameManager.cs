@@ -14,6 +14,7 @@ public class GameManager : ManagerBase<GameManager> {
 		stateMachine.AddState(new StopState(stateMachine));
 		stateMachine.AddState(new DropState(stateMachine, boardView, cells));
 		stateMachine.AddState(new RemoveState(stateMachine, boardView, cells));
+		stateMachine.AddState(new EndState(stateMachine));
 
 		stateMachine.SetState(E_GAME_STATE.PuyoIn);
 	}

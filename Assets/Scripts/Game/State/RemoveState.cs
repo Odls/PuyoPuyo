@@ -20,7 +20,10 @@ public class RemoveState : StateBase {
 		removeAllCoroutine = StartCoroutine(IeRemoveAll());
 	}
 	IEnumerator IeRemoveAll() {
-		cells.RemoveOutRangePuyo();
+		if (cells.CheckHasOutRangePuyo()) {
+			stateMachine.SetState(E_GAME_STATE.End);
+			yield break;
+		}
 
 		List<LinkInfo> _linkInfos = cells.DoRemoveLink();
 		boardView.SetCells(cells);
